@@ -1,0 +1,66 @@
+.main{
+    height: 100vh;
+    background: url(../img/bg/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &__uptitle{
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.1px;
+        color: #23A6F0;             
+    }
+    &__vrapper{
+        max-width: 666px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 155px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 58px;
+        text-align: center;
+        letter-spacing: 0.2px; 
+        color: #FFFFFF;    
+        margin-top: 40px;
+    }
+    &__subtitle{
+        font-weight: 400;
+        font-size: 20px;     
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+        margin-top: 40px;
+    }
+    &__container{
+        margin-top: 40px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:915px){
+    .main{
+        &__title{
+            font-size: 38px;
+        }
+        &__subtitle{
+            font-size: 20px;
+        }
+
+    }
+}
+
+@media screen and (max-width:375px) {
+    .main{
+        &__title{
+            font-size: 30px;
+        }
+        &__subtitle{
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.header{
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    &__logo{
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: 0.1px;
+        color: #FFFFFF;
+    }
+    &__list{
+        margin-left: 83px;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 21px;
+    }
+    &__item{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+    }
+    &__reg{
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 45px;
+    }
+    &__login{
+        font-weight: 700;
+        font-size: 14px;
+        text-align: right;
+        letter-spacing: 0.2px;
+        color: #23A6F0;
+    }
+    &__burger{
+        height: 20px;
+        display: none;
+        flex-direction: column;
+        gap: 7px;
+        cursor: pointer;
+        span{
+            transition: 0.5s all;
+            height: 2px;
+            width: 25px;
+            background-color: #fff;
+        }
+    }
+}
+.burger__active{
+    span{
+        margin-bottom: -8px; ;
+        &:nth-child(1){
+           transform: rotate(-45deg);
+        }
+        &:nth-child(2){
+            display: none;
+         }
+         &:nth-child(3){
+            transform: rotate(45deg);
+         }
+    }
+}
+
+.menu{
+    transition: 2s all;
+    display: none;
+    list-style: none;
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    left: 0;
+    top: 0;
+    color: #fff;
+    height: 100%;
+    width: 50%;
+    padding-left: 20px;
+    padding-top: 30px;
+    
+    &__list{
+        padding-top: 30px;
+        font-size: 20px;
+        list-style: none;
+        line-height: 50px;
+    }
+    &__reg{
+        margin-top: 40px;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 45px;
+    }
+    &__login{
+        font-weight: 700;
+        font-size: 14px;
+        text-align: right;
+        letter-spacing: 0.2px;
+        color: #23A6F0;
+    }
+    &__logo{
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: 0.1px;
+        color: #FFFFFF;
+    }
+}
+
+
+@media screen and(max-width: 425px) {
+    .header{
+        &__logo{
+            display: none;
+        }
+        &__burger{
+            display:flex;
+            margin-left: auto;
+        }
+        &__reg{
+            display: none;
+        }
+        &__list{
+            display: none;
+        }
+    }
+}

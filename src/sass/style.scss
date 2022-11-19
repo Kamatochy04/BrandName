@@ -1,0 +1,27 @@
+@import 'libs/bootstrap-reboot.min';
+
+@import 'blocks/header.scss';
+@import 'blocks/main.scss';
+@import 'blocks/button.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1030px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+}

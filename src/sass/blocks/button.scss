@@ -1,0 +1,19 @@
+.button{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 15px;
+    background: #23A6F0;
+    border-radius: 5px;
+    border: none;
+    &__main__two{
+        background: none;
+        border: 1px solid #23A6F0;
+    }
+}
